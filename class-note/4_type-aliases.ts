@@ -30,7 +30,7 @@ const personAlias: PersonAlias = {
 }
 
 type MyString = string;
-const str: MyString  = 'Hello World!'
+const strAlias: MyString  = 'Hello World!'
 
 type Todo = {
   id: string;

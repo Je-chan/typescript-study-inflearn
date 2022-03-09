@@ -55,7 +55,7 @@ interface StringRegexDictionary {
   [key: string]: RegExp;
 }
 
-const obj: StringRegexDictionary = {
+const objDictionary: StringRegexDictionary = {
   sth: /abc/,
   // 아래의 코드는 RegExp 타입이 아니라서 에러를 발생시킨다
   // cssFile: 'css',
@@ -82,7 +82,7 @@ interface Developer extends Person{
   language: string;
 }
 
-const person: Developer = {
+const personDeveloper: Developer = {
   language: 'ts',
   age: 12,
   name: 'je'
