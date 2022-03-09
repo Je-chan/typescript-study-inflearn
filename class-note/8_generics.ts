@@ -166,7 +166,7 @@ function getShoppingItemOptionKeyof<T extends keyof ShoppingItem>(itemOption: T)
 // getShoppingItemOptionKeyof(10);
 // getShoppingItemOptionKeyof<string>('a');
 
-// 받아올 수 있는 값은 오직 
+// 받아올 수 있는 값은 오직 ShoppingItem 에 존재하는 key 값들만 가능
 getShoppingItemOptionKeyof('name')
 getShoppingItemOptionKeyof('price')
 getShoppingItemOptionKeyof('stock')
