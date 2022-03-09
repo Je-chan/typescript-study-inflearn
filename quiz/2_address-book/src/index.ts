@@ -83,7 +83,7 @@ class AddressBook {
 
   findContactByAddress(address: string): Contact[] {
     return this.contacts.filter(contact => contact.address === address);
-  }s
+  }
 
   // phoneType 의 경우, 오타자가 날 수 있음.
   // 만약 핸드폰이 home, office, studio 이렇게 세개만 온다고 가정한다면 Enum 을 사용할 수 있다
@@ -109,5 +109,16 @@ class AddressBook {
   }
   /* ------------------------------------------------ */
 }
+
+// 여기서 elDiv 는 null 값을 받을 수 있기 때문에 innerText 로 접근이 불가능하다.
+// 그렇기에 if 로 분기처리를 한 번 해야 하지만
+// 타입 단언을 사용한다.
+const elDiv = document.querySelector('.container') as HTMLDivElement
+const elP = document.querySelector('.container') as HTMLParagraphElement
+// if(elDiv) {
+//   elDiv.innerText;
+// }
+elP.innerHTML
+
 
 new AddressBook();
